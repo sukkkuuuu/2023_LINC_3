@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>가고 싶은 회사 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="main.jpg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">배달의 민족 소개</a></li>
+				<li><a href="#gallery">배달의 민족 사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>배달의 민족</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>배달의 민족 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="d.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>배달의 민족 역사</h3>
+					<p>배달의민족은 우아한형제들에서 운영하는 대한민국 배달 주문 서비스 브랜드명이다. 2016년 배달의 민족 브랜딩 과정을 담은 '배민다움'이라는 책을 출판했다. 2019년 12월 딜리버리히어로가 배달의민족 운영사 우아한형제들의 국내외 투자자 지분 87%를 인수합병한다고 발표하였다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>배달의 민족 위치</h3>
+					<p>대한민국 서울특별시 송파구 위례성대로 2</p>
+				</div>				
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>배달의 민족</h1>
+		</div>		
+	</div>
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>배달의 민족 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="1.jpg" rel="external"><img src="1.jpg" /></a></li>	
+				<li><a href="2.jpg" rel="external"><img src="2.jpg" /></a></li>	
+				<li><a href="3.jpg" rel="external"><img src="3.jpg" /></a></li>	
+
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>배달의 민족</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
